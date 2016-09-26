@@ -1,0 +1,79 @@
+html,
+body {
+  background-color: $color-5;
+  font-family: RobotoThin;
+}
+
+h1 {
+  @extend .h;
+  font-size: $font-size-lg;
+  line-height: $gap-base / 3;
+  @include breakpoint(tablet){
+    font-size: $font-size-xl;
+  }
+  @include breakpoint(desktop){
+    font-size: $font-size-xl;
+  }
+}
+
+h3 {
+  @extend .h;
+  font-size: $font-size-md;
+  @include breakpoint(tablet){
+    font-size: $font-size-xm;
+  }
+  @include breakpoint(desktop){
+    font-size: $font-size-xm;
+  }
+}
+
+h4 {
+  @extend .h;
+  font-size: $font-size-sm;
+  @include breakpoint(tablet){
+    font-size: $font-size-md;
+  }
+  @include breakpoint(desktop){
+    font-size: $font-size-md;
+  }
+}
+
+h5 {
+  @extend .h;
+  font-size: $font-size-xs;
+  @include breakpoint(tablet){
+    font-size: $font-size-sm;
+  }
+  @include breakpoint(desktop){
+    font-size: $font-size-sm;
+  }
+}
+
+h6 {
+  @extend .h;
+  font-size: $font-size-xs;
+}
+
+p{
+  font-size: $font-size-sm;
+  line-height: $gap-base / 6;
+
+  @include breakpoint(tablet){
+    font-size: $font-size-md;
+    line-height: $gap-base / 4;
+  }
+  @include breakpoint(desktop){
+    font-size: $font-size-md;
+    line-height: $gap-base / 4;
+  }
+}
+
+a{
+  @include link-before-after($zero $gap-base / 20, $gap-base / 4);
+  @extend .a;
+  position: relative;
+}
+
+th{
+  font-family: RobotoLight;
+}

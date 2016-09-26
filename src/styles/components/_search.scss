@@ -1,0 +1,21 @@
+$module : "search";
+
+.#{$module} {
+
+  .btn{
+    min-width: 100%;
+  }
+
+  .gender{
+    margin-right: $gap-base / 10;
+  }
+
+  &-side{
+    text-align: center;
+
+    .btn{
+      margin-bottom: $gap-base / 7;
+    }
+  }
+
+}

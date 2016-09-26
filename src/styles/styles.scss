@@ -1,0 +1,13 @@
+@import "bootstrap";
+
+//@import "reset";
+@import "variables";
+@import "utils/fonts";
+@import "utils/mixins";
+@import "utils/extending";
+
+@import "base";
+
+@import "pages/home-page";
+@import "pages/_advance-search";
+@import "components/search";

@@ -1,0 +1,25 @@
+.h {
+  font-family: RobotoLight;
+  margin-bottom: $gap-base / 25;
+  line-height: $gap-base / 6;
+
+  @include breakpoint(tablet){
+    margin-bottom: $gap-base / 10;
+    line-height: $gap-base / 3;
+  }
+  @include breakpoint(desktop){
+    margin-bottom: $gap-base / 10;
+    line-height: $gap-base / 3;
+  }
+}
+
+.a{
+  color: $color-3;
+  transition: all 0.5s;
+
+  &:before,
+  &:after{
+    transition: all 0.3s;
+    background-color: $color-4;
+  }
+}
